@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "barlow";
+  src: url(../fonts/Barlow-Medium.ttf);
+}
+@font-face {
+  font-family: "poppins-bold";
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+:root {
+  --poppin-font: "poppins";
+  --poppin-font-2: "poppins-bold";
+  --barlow-font: "barlow";
+  --red-color: "#ec0139";
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 100%;
+    max-width: 1420px;
+  }
+}
+
+.matches-section {
+  background-image: url(../images/football-img.jpg);
+  padding: 80px 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.matches-section::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #ffffff44;
+  z-index: -1;
+}
+
+.match-card {
+  padding: 0 10px 10px;
+  border: 2.18px solid var(--Red, #ec0139);
+  box-shadow: 9px 10px 10.4px 0px #00000040;
+  background: var(--Blue, #084178);
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.live-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--Blue, #084178);
+  padding: 4px 18px;
+  width: fit-content;
+  color: #fff;
+  font-family: var(--poppin-font);
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+.heading-text {
+  font-family: var(--barlow-font);
+  font-weight: 800;
+  font-style: italic;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+.heading-text span {
+  color: var(--Red, #ec0139);
+}
+
+.bottom-para {
+  font-family: var(--poppin-font-2);
+  font-weight: 500;
+  font-size: 22.5px;
+}
+
+.btn-area {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.btn-area button {
+  border: 2px solid var(--Blue, #084178);
+  padding: 10px 38px;
+  font-family: var(--poppin-font);
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background: transparent;
+  color: #084178;
+  opacity: 0.5;
+}
+
+.btn-area button.active {
+  background: var(--Blue, #084178);
+  border: 2px solid var(--Red, #ec0139);
+  color: #fff;
+  opacity: 1;
+}
+
+.btns-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+}
+
+.status-badge {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  background: var(--Red, #ec0139);
+  padding: 5px 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  color: #fff;
+}
