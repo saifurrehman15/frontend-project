@@ -13,12 +13,11 @@ $(".slider-wrrp").slick({
 
 $(".slider-wrrp-2").slick({
   slidesToShow: 4,
-  slidesToScroll: 2,
   dots: false,
   rtl: false,
   infinite: true,
   arrows: true,
-  speed: 500,
+  speed: 5000,
   autoplay: true,
   autoplayspeed: 2000,
   cssEase: "linear",
