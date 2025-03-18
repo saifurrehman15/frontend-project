@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/slick.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <main>
+      <!-- header -->
+      <header>
+        <div class="container">
+          <div class="header-container">
+            <img
+              src="./assets/images/football-logo.png"
+              class="img-fluid"
+              alt=""
+            />
+            <nav>
+              <ul>
+                <li class="active"><a href="">Home</a></li>
+                <li><a href="">Scores</a></li>
+                <li><a href="">Favourites</a></li>
+                <li><a href="">Matches</a></li>
+                <li><a href="">Leagues</a></li>
+                <li><a href="">Subcription</a></li>
+              </ul>
+            </nav>
+            <div class="search_area">
+              <div class="position-relative">
+                <input type="text" class="search-inp" placeholder="Search" />
+                <i class="fa-solid fa-search abs-icon"></i>
+              </div>
+              <a href="" class="auth-login">
+                <i class="fa-solid fa-user"></i>
+                Login
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- hero banner -->
+      <section class="hero_banner">
+        <video
+          src="./assets/images/football_video.mp4"
+          poster="./assets/images/match.png"
+          class="video-area"
+          controls
+        ></video>
+        <!-- Score Area -->
+        <div class="team-score-card">
+          <div class="league_tournament">
+            <img
+              src="./assets/images/ger-2.png"
+              class="img-fluid team-score-img"
+              alt=""
+            />
+            <p class="tournament_score_name">Bundesliga League</p>
+          </div>
+          <p class="match_time">18:45</p>
+          <div class="score_area">
+            <!-- team 1 -->
+            <div class="teams_info">
+              <img
+                src="./assets/images/score-team-1.png"
+                class="img-fluid"
+                alt=""
+              />
+              <span>TS</span>
+            </div>
+            <!-- goals area -->
+            <div class="goals_area">
+              <p class="goals_text"><span>0</span>- <span>0</span></p>
+            </div>
+            <!-- team 2 -->
+            <div class="teams_info">
+              <img
+                src="./assets/images/score-team-2.png"
+                class="img-fluid"
+                alt=""
+              />
+              <span>GAZ</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- play button -->
+        <button class="play-btn"></button>
+      </section>
+
+      <!-- player lineups -->
+      <section class="lineups_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="tabs-btn-2">
+                <button class="active">Lineups</button>
+                <button>Statistics</button>
+                <button>Events</button>
+                <button>Comments</button>
+              </div>
+            </div>
+            <div class="col-lg-7 col-12">
+              <div class="block_field">
+                <div class="team_formation mb-4">
+                  <div class="team_placement">
+                    <img
+                      src="./assets/images/score-team-1.png"
+                      class="img-fluid formation_team_img"
+                      alt=""
+                    />
+                    <div>
+                      <p class="team_short_name">BHA</p>
+                      <p class="team_field_setup">4-2-3-1</p>
+                    </div>
+                  </div>
+                  <div class="player_detail_area">
+                    <p class="player_name">Fabian Hürzeler</p>
+                    <img
+                      src="./assets/images/player-pic.png"
+                      class="img-fluid player_img"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <img
+                  src="./assets/images/field.png"
+                  class="field-img img-fluid mb-4"
+                  alt=""
+                />
+                <div class="team_formation mb-4">
+                  <div class="player_detail_area">
+                    <img
+                      src="./assets/images/player-2.png"
+                      class="img-fluid player_img"
+                      alt=""
+                    />
+                    <p class="player_name">Andoni Iraola Sagarna</p>
+                  </div>
+                  <div class="team_placement">
+                    <img
+                      src="./assets/images/score-team-2.png"
+                      class="img-fluid formation_team_img"
+                      alt=""
+                    />
+                    <div>
+                      <p class="team_short_name">BOU</p>
+                      <p class="team_field_setup">4-2-3-1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-12 padding-column">
+              <div class="combination_block">
+                <ul class="players-list">
+                  <li>
+                    <span>7</span>
+                    <span>Solly March</span>
+                  </li>
+                  <li>
+                    <span>8</span>
+                    <span>Brajan Gruda</span>
+                  </li>
+                  <li>
+                    <span>11</span>
+                    <span>Simon Adingra</span>
+                  </li>
+                  <li>
+                    <span>18</span>
+                    <span>Danny Welbeck</span>
+                  </li>
+                  <li>
+                    <span>26</span>
+                    <span>Yasin Ayari</span>
+                  </li>
+                  <li>
+                    <span>27</span>
+                    <span>Mats Wieffer</span>
+                  </li>
+                  <li>
+                    <span>33</span>
+                    <span>Matt O'Riley</span>
+                  </li>
+                  <li>
+                    <span>39</span>
+                    <span>Carl Rushworth</span>
+                  </li>
+                  <li>
+                    <span>41</span>
+                    <span>Jack Hinshelwood</span>
+                  </li>
+                </ul>
+                <ul class="players-list">
+                  <li>
+                    <span>Alex Scott</span>
+                    <span>8</span>
+                  </li>
+                  <li>
+                    <span>Brajan Gruda</span>
+                    <span>8</span>
+                  </li>
+                  <li>
+                    <span>Simon Adingra</span>
+                    <span>11</span>
+                  </li>
+                  <li>
+                    <span>Danny Welbeck</span>
+                    <span>18</span>
+                  </li>
+                  <li>
+                    <span>Yasin Ayari</span>
+                    <span>26</span>
+                  </li>
+                  <li>
+                    <span>Mats Wieffer</span>
+                    <span>27</span>
+                  </li>
+                  <li>
+                    <span>Matt O'Riley</span>
+                    <span>33</span>
+                  </li>
+                  <li>
+                    <span>Carl Rushworth</span>
+                    <span>39</span>
+                  </li>
+                  <li>
+                    <span>Jack Hinshelwood</span>
+                    <span>41</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

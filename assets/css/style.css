@@ -8,6 +8,11 @@ html {
   font-size: 10px;
   overflow-x: hidden;
 }
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
 
 @font-face {
   font-family: "poppins";
@@ -269,7 +274,7 @@ html {
   transition: all 0.3s ease-in;
 }
 
-.league-container:hover{
+.league-container:hover {
   background: #ec0139;
 }
 
@@ -307,7 +312,7 @@ html {
   font-size: 14px;
 }
 
-.search_inp:focus{
+.search_inp:focus {
   outline: 2px solid skyblue;
 }
 
@@ -315,47 +320,399 @@ html {
   padding: 0 40px;
 }
 
-.top_games_block{
+.top_games_block {
   background: #fff;
+  box-shadow: 0 0 1px gray;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
-.side-bar-header-2{
+.side-bar-header-2 {
   display: flex;
   justify-content: flex-start;
 }
 
-.game_area{
+.game_area {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 30px;
 }
 
-.logo_team_area{
+.border-class {
+  border-bottom: 1px solid rgba(180, 180, 180, 0.685);
+}
+
+.border-class:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.logo_team_area {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
-.team_group{
+.team_group {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.team_name_logo{
+.team_name_logo {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.img-leagues-2 {
+  height: 28px;
+  width: 28px;
+  object-fit: contain;
+}
+
+.logo_game {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.team_name_logo span {
+  font-family: var(--poppin-font);
+  font-weight: 400;
+  font-size: 16px;
+  color: #373737;
+}
+
+.tournament_time {
+  font-family: var(--poppin-font);
+  font-weight: 400;
+  font-size: 16px;
+  color: #373737;
+}
+
+.side-bar-2 {
+  background: #efefef;
+}
+
+.tab-area {
+  display: flex;
+  flex-direction: column;
+}
+.tab-area button {
+  border: none;
+  text-align: start;
+  background: transparent;
+  padding: 20px;
+  color: #5a5a5a;
+  font-family: var(--poppin-font);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.tab-area button.active {
+  background: var(--Blue, #084178);
+  box-shadow: 5px 6px 12.2px 0px #00000040;
+  color: #fff;
+}
+
+.winner {
+  font-weight: 700 !important;
+}
+
+.result-badge {
+  background: var(--Blue, #084178);
+  font-family: var(--poppin-font);
+  font-weight: 600 !important;
+  font-size: 12px;
+  text-align: center;
+  color: #fff !important;
+  padding: 2px 15px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.icon-search {
+  position: absolute;
+  right: 20px;
+  top: 35%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  color: #b1b1b1;
+}
+/* tournament section ends */
+
+/* single page */
+
+/* header */
+
+header {
+  padding: 10px;
+  background: #faf9fe;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 7px 20px;
+  border-radius: 8px;
+}
+
+nav ul li a {
+  font-family: var(--poppin-font);
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  color: #222222;
+}
+
+nav ul li.active {
+  background: #ec013933;
+}
+
+nav ul li.active a {
+  color: var(--Red, #ec0139);
+  font-family: var(--poppin-font);
+  font-weight: 700;
+  font-size: 18px;
+}
+.search_area {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.search-inp {
+  border: none;
+  width: 150px;
+  border-bottom: 1px solid #a8a8a8;
+  background: none;
+  font-size: 14px;
+  color: #656565;
+  outline: none;
+}
+
+.abs-icon {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+.auth-login {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: var(--poppin-font);
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ec0139;
+}
+
+/* hero banner */
+.video-area {
+  width: 100%;
+}
+.hero_banner {
+  position: relative;
+}
+.team-score-card {
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px;
+}
+
+.team-score-img {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+}
+.league_tournament {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.tournament_score_name {
+  font-family: var(--barlow-font);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 36px;
+  color: #fff;
+}
+
+.match_time {
+  font-family: var(--poppin-font);
+  font-weight: 600;
+  font-size: 43px;
+  color: #fff;
+}
+.score_area {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.teams_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.teams_info span {
+  font-family: var(--poppin-font);
+  font-size: 15px;
+  color: #fff;
+}
+
+.goals_text {
+  font-family: var(--poppin-font);
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: none;
+  background-image: url(../images/play-btn-img.png);
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+}
+
+/* team lineups section */
+.lineups_section {
+  width: 100%;
+  background-image: url(../images//football-sec-2.png);
+  padding: 80px 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.team_formation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team_placement {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.formation_team_img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+.team_short_name {
+  font-family: var(--poppin-font);
+  font-weight: 600;
+  font-size: 27px;
+}
+
+.team_field_setup {
+  font-family: var(--poppin-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0.8;
+}
+
+.player_detail_area {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.img-leagues-2{
-  height: 28px;
-  width: 28px;
+.player_name {
+  font-family: var(--poppin-font);
+  font-weight: 600;
+  font-size: 22px;
 }
 
-.logo_game{
-  width: 35px;
-  height: 35px;
+.player_img {
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
 }
-/* tournament section ends */
+.field-img {
+  width: 100%;
+}
+
+.tabs-btn-2 {
+  background: #d9d9d9;
+  margin: auto;
+  width: fit-content;
+}
+
+.tabs-btn-2 button {
+  padding: 10px 25px;
+  background: transparent;
+  border: none;
+  font-family: var(--poppin-font);
+  font-weight: 600;
+  font-size: 16px;
+  color: #585858;
+  text-transform: uppercase;
+}
+
+.tabs-btn-2 button.active {
+  background: var(--Red, #ec0139);
+  color: #fff;
+}
+
+.tabs-btn-2 {
+  margin-bottom: 80px;
+}
+
+.combination_block {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 1.78px 3.55px -1.78px #0000001a;
+  box-shadow: 0px 1.78px 5.33px 0px #0000001a;
+  background: #e6e5e5;
+  padding: 20px 30px;
+  border-radius: 15px;
+}
+
+.padding-column {
+  padding: 70px 30px;
+}
+
+.players-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+  font-family: var(--poppin-font);
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 0;
+}
+/* single page */

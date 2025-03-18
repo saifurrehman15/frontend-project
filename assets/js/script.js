@@ -40,11 +40,20 @@ $(".slider-wrrp-2").slick({
   ],
 });
 
-const btns = document.querySelectorAll(".btn-area button");
+const btnTab1 = document.querySelectorAll(".btn-area button");
+const btnTab2 = document.querySelectorAll(".tab-area button");
+const btnTab3 = document.querySelectorAll(".tabs-btn-2 button");
+console.log(btnTab3);
 
-btns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    btns.forEach((elem) => elem.classList.remove("active"));
-    btn.classList.add("active");
+const tabs = (btns) => {
+  btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btns.forEach((elem) => elem.classList.remove("active"));
+      btn.classList.add("active");
+    });
   });
-});
+};
+
+tabs(btnTab1);
+tabs(btnTab2);
+tabs(btnTab3);
