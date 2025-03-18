@@ -715,4 +715,14 @@ nav ul li.active a {
   font-size: 18px;
   padding: 10px 0;
 }
+
+.brand_section {
+  padding: 60px 80px;
+}
+
+.brand-img {
+  height: 180px;
+  width: 220px;
+  object-fit: contain;
+}
 /* single page */
