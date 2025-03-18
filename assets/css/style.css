@@ -37,7 +37,10 @@ html {
   }
 }
 
+/* matches section */
+
 .matches-section {
+  width: 100%;
   background-image: url(../images/football-img.jpg);
   padding: 80px 10px;
   background-position: center;
@@ -54,7 +57,7 @@ html {
   width: 100%;
   left: 0;
   top: 0;
-  background: #ffffff44;
+  background: #ffffffbd;
   z-index: -1;
 }
 
@@ -65,6 +68,15 @@ html {
   background: var(--Blue, #084178);
   border-radius: 8px;
   margin-right: 20px;
+}
+
+.back-image {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 .live-badge {
@@ -90,8 +102,8 @@ html {
   text-transform: uppercase;
 }
 
-.heading-text span {
-  color: var(--Red, #ec0139);
+.span-color {
+  color: var(--Red, #ec0139) !important;
 }
 
 .bottom-para {
@@ -107,8 +119,8 @@ html {
 }
 
 .btn-area button {
-  border: 2px solid var(--Blue, #084178);
-  padding: 10px 38px;
+  border: 1px solid var(--Blue, #084178);
+  padding: 8px 38px;
   font-family: var(--poppin-font);
   font-weight: 600;
   font-size: 20px;
@@ -121,14 +133,15 @@ html {
 
 .btn-area button.active {
   background: var(--Blue, #084178);
-  border: 2px solid var(--Red, #ec0139);
+  border: 1.4px solid var(--Red, #ec0139);
   color: #fff;
   opacity: 1;
+  transition: all 0.3s linear;
 }
 
 .btns-column {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 
@@ -166,10 +179,10 @@ html {
   gap: 20px;
 }
 
-.team-area img{
-    height: 120px;
-    width: 120px;
-    object-fit: contain;
+.team-area img {
+  height: 120px;
+  width: 120px;
+  object-fit: contain;
 }
 
 .team-name {
@@ -199,3 +212,106 @@ html {
   font-weight: 700;
   font-size: 12px;
 }
+
+/* matches section ends */
+
+/* tournament section */
+
+.tournament-section {
+  position: relative;
+  padding: 40px 10px;
+  z-index: 1;
+}
+
+.stripe-img {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+}
+
+.side-bar {
+  height: 100%;
+  background: #084178;
+  border-radius: 8px;
+}
+
+.sec-hd {
+  font-family: var(--barlow-font);
+  font-weight: 800;
+  font-style: italic;
+  font-size: 64px;
+}
+
+.side-bar-header {
+  background: #ec0139;
+  text-align: center;
+  color: #fff;
+  padding: 10px 30px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-family: var(--barlow-font);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 48px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.league-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 20px;
+  transition: all 0.3s ease-in;
+}
+
+.league-container:hover{
+  background: #ec0139;
+}
+
+.img-leagues {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.content_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.league_name {
+  font-family: var(--poppin-font);
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.league_level {
+  color: #d3d3d3;
+  font-weight: 500;
+}
+
+.search_inp {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid #b1b1b1;
+  background: #efefef;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.search_inp:focus{
+  outline: 2px solid skyblue;
+}
+
+.column-details {
+  padding: 0 40px;
+}
+/* tournament section ends */
