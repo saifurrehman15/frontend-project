@@ -314,4 +314,48 @@ html {
 .column-details {
   padding: 0 40px;
 }
+
+.top_games_block{
+  background: #fff;
+}
+
+.side-bar-header-2{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.game_area{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo_team_area{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team_group{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.team_name_logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.img-leagues-2{
+  height: 28px;
+  width: 28px;
+}
+
+.logo_game{
+  width: 35px;
+  height: 35px;
+}
 /* tournament section ends */
