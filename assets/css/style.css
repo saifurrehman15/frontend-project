@@ -89,7 +89,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: var(--Blue, #084178);
+  background: var(--Blue, #084178) !important;
   padding: 4px 18px;
   width: fit-content;
   color: #fff;
@@ -525,6 +525,37 @@ nav ul li.active a {
 .video-area {
   width: 100%;
 }
+
+.video-area:hover .play-btn {
+  display: block !important;
+}
+
+.setting-drp {
+  display: none;
+  position: absolute;
+  top: -60px;
+  left: -40px;
+  background: #fff;
+  width: 150px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.setting-drp.active{
+  display: block !important;
+}
+
+.setting-drp button {
+  width: 100%;
+  color: #000 !important;
+  background: transparent;
+  font-size: 14px !important;
+  font-family: var(--barlow-font);
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .hero_banner {
   position: relative;
 }
@@ -589,6 +620,7 @@ nav ul li.active a {
 }
 
 .play-btn {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -715,6 +747,11 @@ nav ul li.active a {
   font-weight: 600;
   font-size: 18px;
   padding: 10px 0;
+}
+
+
+.players-list-2 li{
+  justify-content: space-between;
 }
 
 .brand_section {
@@ -877,5 +914,45 @@ nav ul li.active a {
   justify-content: space-between;
 }
 
+.audio_player {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 10px 80px;
+}
+
+input[type="range"] {
+  width: 80%;
+  height: 6px;
+  cursor: pointer;
+  accent-color: #fff;
+}
+
+.group-area-2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.group-area-2 button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.time_audio {
+  font-family: var(--poppin-font);
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+}
+
+.play-btn.active {
+  display: block;
+}
 
 /* single page ends */

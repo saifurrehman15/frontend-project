@@ -16,6 +16,12 @@ $(".slider-wrrp").slick({
         slidesToShow: 3,
       },
     },
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
   ],
 });
 
@@ -35,6 +41,12 @@ $(".slider-wrrp-2").slick({
       breakpoint: 1440,
       settings: {
         slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 2,
       },
     },
   ],
@@ -79,13 +91,74 @@ tabs(btnTab1);
 tabs(btnTab2);
 tabs(btnTab3);
 
-const video = document.querySelector(".video-area");
-const playBtn = document.querySelector(".play-btn");
+const video = document.querySelector(".video-area"),
+  playBtn = document.querySelector(".play-btn"),
+  liveBtn = document.querySelector(".live-btn"),
+  rangeInp = document.querySelector(".range_inp"),
+  time = document.querySelector(".time_audio"),
+  fullScreenBtn = document.querySelector(".expand"),
+  downloadBtn = document.querySelector(".download-video"),
+  settingBtn = document.querySelector(".setting-btn"),
+  drpMenu = document.querySelector(".setting-drp");
 
-playBtn.addEventListener("click", () => {
-  console.log(
-    video.duration < 60
-      ? "0:" + Math.floor(video.duration)
-      : Math.floor(video.duration)
-  );
-});
+if (video) {
+  // playing video
+  playBtn.addEventListener("click", () => {
+    playBtn.classList.remove("active");
+    video.play();
+  });
+
+  video.addEventListener("timeupdate", () => {
+    let currentTime = Math.floor(video.currentTime);
+    let currentDur = currentTime % 60;
+
+    time.innerText =
+      currentTime < 60
+        ? `00:${currentTime < 10 ? "0" + currentTime : currentTime}`
+        : `${Math.floor(currentTime / 60)}:${
+            currentDur < 10 ? "0" + currentDur : currentDur
+          }`;
+
+    rangeInp.value = (video.currentTime / video.duration) * 100;
+
+    if (video.currentTime == video.duration) {
+      playBtn.classList.add("active");
+    }
+  });
+
+  rangeInp.addEventListener("change", () => {
+    playBtn.classList.add("active");
+    video.pause();
+    video.currentTime = (rangeInp.value / 100) * video.duration;
+  });
+
+  liveBtn.addEventListener("click", () => {
+    video.currentTime = video.duration;
+  });
+
+  fullScreenBtn.addEventListener("click", () => {
+    video.requestFullscreen();
+  });
+
+  downloadBtn.addEventListener("click", () => {
+    let elem = document.createElement("a");
+    elem.href = video.src;
+    elem.download = "video/mp3";
+    elem.click();
+    drpMenu.classList.remove("active");
+  });
+
+  settingBtn.addEventListener("click", () => {
+    if (drpMenu.classList.contains("active")) {
+      drpMenu.classList.remove("active");
+    } else {
+      drpMenu.classList.add("active");
+    }
+  });
+
+  video.addEventListener("click", () => {
+    drpMenu.classList.remove("active");
+    playBtn.classList.add("active");
+    video.pause();
+  });
+}
