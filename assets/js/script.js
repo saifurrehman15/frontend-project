@@ -22,6 +22,12 @@ $(".slider-wrrp").slick({
         slidesToShow: 2,
       },
     },
+    {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
   ],
 });
 
@@ -47,6 +53,12 @@ $(".slider-wrrp-2").slick({
       breakpoint: 1000,
       settings: {
         slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 1,
       },
     },
   ],
