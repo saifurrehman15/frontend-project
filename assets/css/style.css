@@ -8,6 +8,7 @@ html {
   font-size: 10px;
   overflow-x: hidden;
 }
+
 p,
 ul {
   margin: 0;
@@ -725,4 +726,156 @@ nav ul li.active a {
   width: 220px;
   object-fit: contain;
 }
-/* single page */
+
+/* footer */
+.footer-main {
+  padding: 100px 0;
+  background: var(--Red, #ec0139);
+  background-image: url(../images/bg-pattern.png.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.sub-hd {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.input-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ebebeb;
+  padding: 5px 10px;
+  padding-left: 20px;
+  border-radius: 8px;
+}
+.input-footer input {
+  height: 48px;
+  width: 80%;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: sans-serif;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.input-footer button {
+  background: var(--Red, #ec0139);
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.columns-ft {
+  padding: 0 10px;
+}
+.ft-col-hd {
+  font-family: var(--barlow-font);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 32px;
+  color: #fff;
+}
+.ft-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.ft-nav-links li {
+  list-style: none;
+}
+
+.ft-nav-links li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--poppin-font);
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.ft-nav-links-2 li a {
+  font-weight: 400 !important;
+}
+
+.ft-nav-links li a i {
+  font-size: 10px;
+}
+
+.icon-social {
+  background: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Red, #ec0139);
+}
+
+.icon-social i {
+  font-size: 18px !important;
+}
+
+.social-icons-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.social-icons-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.column-position {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.footer-bottom {
+  background: var(--Blue, #084178);
+  padding: 10px 0;
+}
+
+.footer-bt-text {
+  font-family: var(--poppin-font);
+  font-weight: 300;
+  font-size: 17px;
+  color: #fff;
+}
+
+.footer-bt-text .span-text-2 {
+  font-weight: 700 !important;
+}
+
+.footer-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* single page ends */

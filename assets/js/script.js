@@ -61,7 +61,6 @@ $(".brand-slider").slick({
   ],
 });
 
-
 const btnTab1 = document.querySelectorAll(".btn-area button");
 const btnTab2 = document.querySelectorAll(".tab-area button");
 const btnTab3 = document.querySelectorAll(".tabs-btn-2 button");
@@ -79,3 +78,14 @@ const tabs = (btns) => {
 tabs(btnTab1);
 tabs(btnTab2);
 tabs(btnTab3);
+
+const video = document.querySelector(".video-area");
+const playBtn = document.querySelector(".play-btn");
+
+playBtn.addEventListener("click", () => {
+  console.log(
+    video.duration < 60
+      ? "0:" + Math.floor(video.duration)
+      : Math.floor(video.duration)
+  );
+});
