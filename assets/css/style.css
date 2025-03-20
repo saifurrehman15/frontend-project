@@ -541,7 +541,7 @@ nav ul li.active a {
   padding: 10px;
 }
 
-.setting-drp.active{
+.setting-drp.active {
   display: block !important;
 }
 
@@ -749,8 +749,7 @@ nav ul li.active a {
   padding: 10px 0;
 }
 
-
-.players-list-2 li{
+.players-list-2 li {
   justify-content: space-between;
 }
 
@@ -955,4 +954,22 @@ input[type="range"] {
   display: block;
 }
 
+.btn-class {
+  display: flex;
+  padding: 8px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: #ec0139;
+  color: #fff;
+  border: none;
+  font-size: 10px;
+  font-weight: 600;
+  font-style: italic;
+  font-family: var(--barlow-font);
+}
+
+.column-btns {
+  display: none;
+}
 /* single page ends */
