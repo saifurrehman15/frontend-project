@@ -181,9 +181,12 @@ if (video) {
   });
 }
 
-const sideBarBtn = document.querySelector(".menu-btn");
-const sideBarArea = document.querySelector(".menu-btn");
+$(document).ready(function () {
+  $(".menu-btn,.close-btn").click(function () {
+    $(".side-bar-nav").toggleClass("active");
+  });
 
-sideBarBtn.addEventListener("click",()=>{
-  
-})
+  $(".btn-class,.close-btn-2").click(function () {
+    $(".column-sidebar-2").toggleClass("active");
+  });
+});

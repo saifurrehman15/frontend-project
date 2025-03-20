@@ -364,6 +364,36 @@
   .divider {
     display: block;
   }
+  .menu-btn {
+    display: flex;
+  }
+  .search-container {
+    display: none;
+  }
+  .btn-class {
+    display: flex;
+  }
+
+  .column-sidebar-2 {
+    height: 100vh;
+    position: fixed;
+    width: 300px;
+    top: 0;
+    left: -100%;
+    z-index: 999;
+    transition: 1s;
+  }
+
+  .column-sidebar-2.active {
+    left: 0;
+  }
+  .column-sidebar-2 .leagues {
+    height: 90%;
+    overflow-y: auto;
+  }
+  .close-btn-2 {
+    display: block;
+  }
 }
 
 @media (max-width: 767px) {
@@ -667,5 +697,8 @@
   .auth-login,
   nav ul li.active a {
     font-size: 12px;
+  }
+  .side-bar-nav {
+    width: 280px;
   }
 }
