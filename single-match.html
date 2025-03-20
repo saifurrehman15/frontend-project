@@ -36,10 +36,10 @@
           <div class="header-container">
             <img
               src="./assets/images/football-logo.png"
-              class="img-fluid"
+              class="img-fluid logo"
               alt=""
             />
-            <nav>
+            <nav class="hidden">
               <ul>
                 <li class="active"><a href="">Home</a></li>
                 <li><a href="">Scores</a></li>
@@ -58,6 +58,31 @@
                 <i class="fa-solid fa-user"></i>
                 Login
               </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="side-bar-nav-area">
+          <div class="side-bar-nav">
+            <div class="sider-bar-header">
+              <img
+                src="./assets/images/football-logo.png"
+                class="img-fluid menu-logo"
+                alt=""
+              />
+              <button class="close-btn">
+                <i class="fa-solid fa-x-mark"></i>close
+              </button>
+            </div>
+            <div class="side-bar-body">
+              <ul class="link-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Scores</a></li>
+                <li><a href="">Favourites</a></li>
+                <li><a href="">Matches</a></li>
+                <li><a href="">Leagues</a></li>
+                <li><a href="">Subscription</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -119,13 +144,17 @@
               <span>Live</span>
             </button>
             <div class="position-relative">
-              <button class="setting-btn"><i class="fa-solid fa-gear"></i></button>
+              <button class="setting-btn">
+                <i class="fa-solid fa-gear"></i>
+                setting
+              </button>
               <div class="setting-drp">
                 <button class="download-video">Download Video</button>
               </div>
             </div>
             <button class="expand">
               <i class="fa-solid fa-expand"></i>
+              expand
             </button>
           </div>
         </div>
@@ -143,7 +172,7 @@
                 <button>Comments</button>
               </div>
             </div>
-            <div class="col-lg-7 col-12">
+            <div class="col-xl-7 col-lg-6 col-12">
               <div class="block_field">
                 <div class="team_formation mb-4">
                   <div class="team_placement">
@@ -194,7 +223,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-5 col-12 padding-column ">
+            <div class="col-xl-5 col-lg-6 col-12 padding-column">
               <div class="combination_block">
                 <ul class="players-list">
                   <li>
@@ -329,10 +358,10 @@
         <div class="footer-main">
           <div class="container">
             <div class="row">
-              <div class="col-lg-3 columns-ft">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 columns-ft mb-5">
                 <img
                   src="./assets/images/football-logo.png"
-                  class="img-fluid mb-5"
+                  class="img-fluid mb-5 logo-2"
                   alt=""
                 />
                 <h4 class="sub-hd mb-5">Subscribe to Our Email</h4>
@@ -343,7 +372,10 @@
                   </div>
                 </form>
               </div>
-              <div class="col-lg-3 column-position">
+              <div class="divider"></div>
+              <div
+                class="col-lg-3 col-md-4 col-sm-4 col-6 column-position mb-5"
+              >
                 <div>
                   <h3 class="ft-col-hd mb-5">Navigation</h3>
                   <ul class="ft-nav-links">
@@ -386,7 +418,9 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-3 column-position">
+              <div
+                class="col-lg-3 col-md-4 col-sm-4 col-6 column-position mb-5"
+              >
                 <div>
                   <h3 class="ft-col-hd mb-5">Important Links</h3>
                   <ul class="ft-nav-links">
@@ -429,7 +463,9 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-3 column-position">
+              <div
+                class="col-lg-3 col-md-4 col-sm-4 col-8 column-position mb-5"
+              >
                 <div>
                   <h3 class="ft-col-hd mb-5">Contact Us</h3>
                   <ul class="ft-nav-links ft-nav-links-2">

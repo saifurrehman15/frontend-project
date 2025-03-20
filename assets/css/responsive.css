@@ -4,6 +4,68 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .logo {
+    height: 100px;
+    object-fit: contain;
+  }
+  .play-btn {
+    height: 80px;
+    width: 80px;
+  }
+  .time_audio,
+  .team_short_name,
+  .player_name,
+  .group-area-2 button {
+    font-size: 18px;
+  }
+
+  .tournament_score_name,
+  .match_time {
+    font-size: 30px;
+  }
+
+  .time_audio,
+  .team_short_name,
+  .player_name {
+    font-size: 20px;
+  }
+
+  .players-list li {
+    font-size: 16px;
+  }
+
+  .ft-nav-links li a {
+    font-size: 16px;
+  }
+
+  .sub-hd {
+    font-size: 25px;
+  }
+  .column-position {
+    align-items: center;
+  }
+
+  .brand-img {
+    height: 150px;
+  }
+
+  .ft-col-hd {
+    font-size: 25px;
+  }
+
+  nav ul li {
+    padding: 7px 15px;
+  }
+  .input-footer button {
+    padding: 15px;
+    font-size: 14px;
+  }
+  .footer-bt-text {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 1399px) {
   .heading-text {
     font-size: 55px;
@@ -13,6 +75,104 @@
   }
   .btn-area button {
     padding: 5px 35px;
+  }
+  .logo {
+    height: 80px;
+  }
+  nav ul li {
+    padding: 7px 12px;
+  }
+  nav ul li a,
+  .auth-login,
+  nav ul li.active a {
+    font-size: 16px;
+  }
+  .tournament_score_name,
+  .match_time,
+  .goals_text {
+    font-size: 25px;
+  }
+
+  .teams_info img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+
+  .time_audio,
+  .team_short_name,
+  .player_name,
+  .group-area-2 button {
+    font-size: 18px;
+  }
+
+  .group-area-2 img {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+  }
+
+  .players-list li {
+    font-size: 14px;
+  }
+
+  .combination_block {
+    padding: 20px 25px;
+  }
+  .ft-nav-links li a {
+    font-size: 14px;
+  }
+  .ft-col-hd {
+    font-size: 22px;
+  }
+  .sub-hd {
+    font-size: 22px;
+    text-align: center;
+  }
+  .input-footer {
+    padding: 4px 6px;
+    padding-left: 10px;
+  }
+  .input-footer button {
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .icon-social {
+    height: 35px;
+    width: 35px;
+  }
+  .icon-social i {
+    font-size: 14px !important;
+  }
+  .column-ft img {
+    height: 120px;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 1366px) {
+  .tournament_score_name,
+  .match_time,
+  .goals_text {
+    font-size: 18px;
+  }
+
+  .brand-img {
+    height: 125px;
+  }
+
+  .ft-col-hd {
+    font-size: 20px;
+  }
+
+  .time_audio,
+  .team_short_name,
+  .player_name,
+  .group-area-2 button {
+    font-size: 16px;
   }
 }
 
@@ -53,6 +213,84 @@
   .status-badge {
     font-size: 12px;
   }
+
+  nav ul li {
+    padding: 7px 10px;
+  }
+
+  nav ul li a,
+  .auth-login,
+  nav ul li.active a {
+    font-size: 14px;
+  }
+  .logo {
+    height: 65px;
+  }
+  nav ul {
+    gap: 5px;
+  }
+  .brand-img {
+    height: 110px;
+  }
+  .brand_section {
+    padding: 50px 80px;
+  }
+  .lineups_section {
+    padding: 50px 10px;
+  }
+  .time_audio,
+  .team_short_name,
+  .player_name,
+  .group-area-2 button {
+    font-size: 14px;
+  }
+  .players-list li {
+    font-size: 12px;
+  }
+  .tournament_score_name,
+  .match_time,
+  .goals_text {
+    font-size: 16px;
+  }
+  .audio_player {
+    gap: 25px;
+  }
+
+  .sub-hd {
+    font-size: 20px;
+  }
+  .tabs-btn-2 button {
+    font-size: 14px;
+  }
+  .play-btn {
+    height: 60px;
+    width: 60px;
+  }
+  .ft-col-hd,
+  .sub-hd {
+    font-size: 18px;
+  }
+  .ft-nav-links li a {
+    font-size: 12px;
+  }
+  .logo-2 {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .input-footer input {
+    height: 40px;
+    width: 80%;
+  }
+  .input-footer button {
+    padding: 10px;
+    font-size: 10px;
+  }
+  .social-icons-list a {
+    height: 30px;
+    width: 30px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -84,9 +322,47 @@
   .column-details {
     padding: 0 25px;
   }
-  .column-btns{
+  .column-btns {
     display: flex;
     align-items: center;
+  }
+  .hidden {
+    display: none;
+  }
+  .padding-column {
+    padding: 40px 0;
+  }
+  .column-position {
+    align-items: unset;
+    flex-direction: row !important;
+  }
+
+  .ft-col-hd,
+  .sub-hd {
+    font-size: 16px;
+  }
+  .footer-bt-text {
+    font-size: 14px;
+  }
+  .logo-2 {
+    width: auto;
+  }
+
+  .sub-hd {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .input-footer button {
+    font-size: 12px;
+  }
+  .brand-img {
+    height: 100px;
+  }
+  .league_tournament {
+    gap: 15px;
+  }
+  .divider {
+    display: block;
   }
 }
 
@@ -123,13 +399,78 @@
     height: 80px;
     width: 80px;
   }
-  .column-matches{
+  .column-matches {
     display: flex;
     flex-direction: column;
     align-items: end;
   }
-  .side-bar-2{
+  .side-bar-2 {
     width: 50%;
+  }
+  .brand-img {
+    height: 80px;
+  }
+  .footer-bt-text {
+    font-size: 12px;
+  }
+  .time_audio,
+  .team_short_name,
+  .player_name,
+  .group-area-2 button {
+    font-size: 12px;
+  }
+  .group-area-2 img {
+    height: 16px;
+    width: 16px;
+  }
+  .league_tournament {
+    gap: 10px;
+  }
+  .team-score-img {
+    height: 45px;
+    width: 45px;
+  }
+  .tournament_score_name,
+  .match_time,
+  .goals_text {
+    font-size: 14px;
+  }
+
+  .teams_info img {
+    height: 50px;
+    width: 50px;
+  }
+  .teams_info span {
+    font-size: 14px;
+  }
+  .score_area {
+    gap: 20px;
+  }
+  .play-btn {
+    height: 50px;
+    width: 50px;
+  }
+  .team_field_setup {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .team-score-card,
+  .audio_player {
+    padding: 10px 40px;
+  }
+  .brand_section {
+    padding: 30px 40px;
+  }
+  .footer-bottom-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .group-area-2 {
+    gap: 5px;
   }
 }
 
@@ -153,7 +494,42 @@
   }
   .card-matches-area {
     margin-top: 20px;
-}
+  }
+
+  .tabs-btn-2 button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  .play-btn {
+    height: 40px;
+    width: 40px;
+  }
+  .team-score-img,
+  .teams_info img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .group-area-2 button {
+    padding: 4px 15px;
+  }
+  .audio_player {
+    gap: 15px;
+  }
+  .input-footer button {
+    padding: 12px 15px;
+  }
+  .sub-hd {
+    margin-bottom: 20px !important;
+  }
+  .columns-ft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .column-position {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -173,6 +549,80 @@
     width: 20px;
     object-fit: contain;
   }
+  .tournament_score_name,
+  .match_time,
+  .goals_text {
+    font-size: 12px;
+  }
+  .team-score-img,
+  .teams_info img {
+    height: 35px;
+    width: 35px;
+  }
+  .team-score-card,
+  .audio_player {
+    padding: 4px 20px;
+  }
+  .team-score-card {
+    top: 6px;
+  }
+  .audio_player {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  .score_area {
+    gap: 12px;
+  }
+  .league_tournament {
+    gap: 8px;
+  }
+  .team-score-img,
+  .teams_info img {
+    height: 30px;
+    width: 30px;
+  }
+  .teams_info {
+    gap: 6px;
+  }
+  .group-area-2 button {
+    padding: 4px 10px;
+  }
+  .group-area-2 img {
+    height: 14px;
+    width: 14px;
+  }
+  .team-score-card,
+  .audio_player {
+    padding: 4px 15px;
+  }
+
+  .play-btn {
+    height: 35px;
+    width: 35px;
+  }
+  .search_area {
+    gap: 18px;
+  }
+  .logo {
+    height: 55px;
+  }
+  .tabs-btn-2 button {
+    padding: 10px 15px;
+  }
+  .brand_section {
+    padding: 30px 20px;
+  }
+  .brand-img {
+    height: 65px;
+  }
+  .lineups_section {
+    padding: 30px 10px;
+  }
+  .tabs-btn-2 {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -180,5 +630,42 @@
     margin-left: -5px;
     padding: 2px 10px;
     font-size: 10px !important;
+  }
+  .search-inp {
+    width: 120px;
+    font-size: 12px;
+  }
+  .tabs-btn-2 button {
+    padding: 10px 12px;
+    font-size: 10px;
+  }
+
+  .players-list li {
+    font-size: 10px;
+  }
+  .time_audio,
+  .team_short_name,
+  .player_name,
+  .group-area-2 button {
+    font-size: 10px;
+  }
+
+  .team-score-img,
+  .teams_info img {
+    height: 26px;
+    width: 26px;
+  }
+  .play-btn {
+    height: 30px;
+    width: 30px;
+  }
+  .score_area {
+    gap: 10px;
+  }
+
+  nav ul li a,
+  .auth-login,
+  nav ul li.active a {
+    font-size: 12px;
   }
 }

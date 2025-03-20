@@ -1,5 +1,3 @@
-
-
 $(".slider-wrrp").slick({
   slidesToShow: 4,
   dots: false,
@@ -80,6 +78,12 @@ $(".brand-slider").slick({
   responsive: [
     {
       breakpoint: 1440,
+      settings: {
+        slidesToShow: 4,
+      },
+    },
+    {
+      breakpoint: 600,
       settings: {
         slidesToShow: 3,
       },
@@ -176,3 +180,10 @@ if (video) {
     video.pause();
   });
 }
+
+const sideBarBtn = document.querySelector(".menu-btn");
+const sideBarArea = document.querySelector(".menu-btn");
+
+sideBarBtn.addEventListener("click",()=>{
+  
+})
